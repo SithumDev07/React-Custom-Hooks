@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 3rem;
+}
+
+.container h1 {
+  user-select: none;
+}
+
+.container input {
+  height: 40px;
+  margin-top: 15px;
+  padding: 5px 12px;
+  width: 60%;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.2rem;
+}
+
+.container input:focus {
+  outline: none;
+}
