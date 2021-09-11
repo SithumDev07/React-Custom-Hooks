@@ -49,3 +49,37 @@
         }
         return { value, onChange };
     }
+
+## useTabs()
+
+    const useTabs(initialTab, allTabs) {
+        const [currentIndex, setCurrentIndex] = useState(initialTab);
+
+        if(!allTabs || !Array.isArray(allTabs)) {
+            return;
+        }
+
+        return {
+            currentItem: allTabs[currentIndex],
+            changeItem: setCurrentIndex
+        }
+    }
+
+#### When Updating
+
+    const content = [
+        {
+            tab: "section1",
+            content: "The sound of rain outside when u're in bed is elite"
+        },
+        {
+            tab: "section2",
+            content: "I missed the times where Saturdays and Sundays were really considered as rest days"
+        }
+    ];
+
+    const { currentItem, changeItem } = useTabs(0, content);
+
+    content.map((section, index) => (
+        <button onClick={section.setCurrentIndex(index)}>{section.tab}</button>
+    ))

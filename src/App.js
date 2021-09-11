@@ -1,10 +1,10 @@
 import "./App.css";
-import UseInputHook from "./components/UseInputHook";
+import UseTabsHook from "./components/UseTabs";
 
 const App = () => {
   return (
     <div className="App">
-      <UseInputHook />
+      <UseTabsHook />
       <a href="https://github.com/SithumDev07">Made with 🖤</a>
     </div>
   );

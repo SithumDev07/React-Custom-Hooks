@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 3rem;
+}
+
+.container h1 {
+  user-select: none;
+}
+
+.container p {
+  color: rgba(0, 0, 0, 0.7);
+  margin-top: 15px;
+  user-select: none;
+  font-size: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.5);
+  padding-top: 10px;
+}
+
+.buttonContainer button {
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 15px 22px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+}
+
+.buttonContainer button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.buttonContainer button:first-child {
+  margin-right: 10px;
+}
