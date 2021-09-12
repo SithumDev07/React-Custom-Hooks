@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 3rem;
+}
+
+.container h1 {
+  user-select: none;
+}

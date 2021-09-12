@@ -83,3 +83,14 @@
     content.map((section, index) => (
         <button onClick={section.setCurrentIndex(index)}>{section.tab}</button>
     ))
+
+## UseEffect()
+
+    There are three states of useEffect Hook
+        1. Component Did mount
+        2. Component Did update
+        3. Component will unmount
+
+    useEffect require two parameters,
+        1. Function
+        2. Dependencies (type Array)
