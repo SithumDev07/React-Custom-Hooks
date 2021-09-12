@@ -94,3 +94,23 @@
     useEffect require two parameters,
         1. Function
         2. Dependencies (type Array)
+
+## UseTitle()
+
+    const useTitle = (initialTitle) => {
+        const [title, setTitle] = useState(initialTitle);
+        const updateTitle = () => {
+            const htmlTitle = document.querySelector('title');
+            htmlTitle.innerText = title;
+        }
+        useEffect(updateTitle, [title])
+        return setTitle;
+    }
+
+#### When updating
+
+    const titleUpdater = useTitle("Loading...");
+
+    setTimeOut(() => {
+        titleUpdater("Home");
+    }, 2000);

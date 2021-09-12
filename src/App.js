@@ -1,10 +1,10 @@
 import "./App.css";
-import UseEffectHook from "./components/UseEffectHook";
+import UseTitleHook from "./components/useTitleHook";
 
 const App = () => {
   return (
     <div className="App">
-      <UseEffectHook />
+      <UseTitleHook />
       <a href="https://github.com/SithumDev07">Made with 🖤</a>
     </div>
   );
