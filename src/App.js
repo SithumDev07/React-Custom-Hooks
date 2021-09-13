@@ -1,11 +1,10 @@
-import { useRef } from "react";
 import "./App.css";
-import UseClickHook from "./components/UseClickHook";
+import UseConfirm from "./components/UseConfirm";
 
 const App = () => {
   return (
     <div className="App">
-      <UseClickHook />
+      <UseConfirm />
       <a href="https://github.com/SithumDev07">Made with 🖤</a>
     </div>
   );

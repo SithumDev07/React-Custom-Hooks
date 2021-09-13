@@ -142,3 +142,26 @@
     }
 
     const title = useClick(sayHello);
+
+## useConfirm()
+
+    const useConfirm = (message = "", onConfirm, onCancel) => {
+
+        if(onCinfirm && typeof onCinfirm !== 'function') {
+            return;
+        }
+
+        if(onCancel && typeof onCancel !== 'function') {
+            return;
+        }
+
+        const confirmAction = () => {
+            if(window.confirm(message)) {
+                onConfirm();
+            } else {
+                onCancel();
+            }
+        }
+
+        return confirmAction;
+    }
