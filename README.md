@@ -114,3 +114,31 @@
     setTimeOut(() => {
         titleUpdater("Home");
     }, 2000);
+
+## UseClick()
+
+    useClick(onClick) {
+
+        const element = useRef();
+
+        useEffect(() => {
+            if(element.current && typeof onClick === 'function') {
+                element.current.addEventListener('click', onClick);
+            }
+
+            return () => {
+                if(element.current && typeof onClick === 'function') {
+                    element.current.removeEventListener('click', onClick);
+                }
+            }
+        }, []);
+        return element;
+    }
+
+#### When Calling
+
+    const sayHello = () =>  {
+        title.current.classList.add('scale');
+    }
+
+    const title = useClick(sayHello);

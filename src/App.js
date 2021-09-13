@@ -1,10 +1,11 @@
+import { useRef } from "react";
 import "./App.css";
-import UseTitleHook from "./components/useTitleHook";
+import UseClickHook from "./components/UseClickHook";
 
 const App = () => {
   return (
     <div className="App">
-      <UseTitleHook />
+      <UseClickHook />
       <a href="https://github.com/SithumDev07">Made with 🖤</a>
     </div>
   );
